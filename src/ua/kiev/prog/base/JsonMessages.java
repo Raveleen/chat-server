@@ -7,7 +7,7 @@ public class JsonMessages {
 
     public JsonMessages(Map<Integer, Message> sourceList, int fromIndex, int lastIndex) {
         this.list = new HashMap<>();
-        for (int i = fromIndex; i <= lastIndex; i++)
+        for (int i = fromIndex; i < lastIndex; i++)
             list.put(i, sourceList.get(i));
     }
 }
