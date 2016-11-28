@@ -25,7 +25,7 @@ public class MessageList {
             firstIndex++;
         }
 
-        list.put(++lastIndex, m);
+        list.put(lastIndex++, m);
     }
 
     public synchronized String toJSON(int n) {
